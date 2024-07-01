@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/office-js/custom-functions.schema.json",
+  "functions": [
+    {
+      "id": "ADDNOBATCH",
+      "name": "ADD",
+      "description": "Add two numbers",
+      "helpUrl": "http://www.contoso.com/help",
+      "result": {
+        "type": "number",
+        "dimensionality": "scalar"
+      },
+      "parameters": [
+        {
+          "name": "first",
+          "description": "first number to add",
+          "type": "number",
+          "dimensionality": "scalar"
+        },
+        {
+          "name": "second",
+          "description": "second number to add",
+          "type": "number",
+          "dimensionality": "scalar"
+        }
+      ]
+    },
+    {
+      "id": "TotalTax",
+      "name": "TotalTax",
+      "description": "Sums total tax payable for a given year",
+      "helpUrl": "http://www.contoso.com/help",
+      "result": {
+      "type": "number",
+      "dimensionality": "scalar"
+      },
+      "parameters": [
+      {
+        "name": "year",
+        "description": "year",
+        "type": "number",
+        "dimensionality": "scalar"
+      },
+      {
+        "name": "taxableIncome",
+        "description": "taxable income",
+        "type": "number",
+        "dimensionality": "scalar"
+      },
+      {
+        "name": "SAPTO",
+        "description": "seniors and pensioners tax offset",
+        "type": "number",
+        "dimensionality": "scalar",
+        "optional": true
+      },
+      {
+        "name": "familyIncome",
+        "description": "family income",
+        "type": "number",
+        "dimensionality": "scalar",
+        "optional": true
+      },
+      {
+        "name": "dependents",
+        "description": "number of dependents",
+        "type": "number",
+        "dimensionality": "scalar",
+        "optional": true
+      }
+      ]
+    }
+  ]
+}
