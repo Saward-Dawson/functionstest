@@ -69,6 +69,123 @@
         "optional": true
       }
       ]
+    },
+    {
+      "id": "incomeTax",
+      "name": "incomeTax",
+      "description": "Returns the income tax",
+      "helpUrl": "http://www.contoso.com/help",
+      "result": {
+        "type": "number",
+        "dimensionality": "scalar"
+      },
+      "parameters": [
+        {
+          "name": "year",
+          "description": "year",
+          "type": "number",
+          "dimensionality": "scalar"
+        },
+        {
+          "name": "taxableIncome",
+          "description": "taxable income",
+          "type": "number",
+          "dimensionality": "scalar"
+        }
+      ]
+    },
+    {
+      "id": "medicareLevy",
+      "name": "medicareLevy",
+      "description": "Returns the medicare levy",
+      "helpUrl": "http://www.contoso.com/help",
+      "result": {
+        "type": "number",
+        "dimensionality": "scalar"
+      },
+      "parameters": [
+        {
+          "name": "year",
+          "description": "year",
+          "type": "number",
+          "dimensionality": "scalar"
+        },
+        {
+          "name": "taxableIncome",
+          "description": "taxable income",
+          "type": "number",
+          "dimensionality": "scalar"
+        },
+        {
+          "name": "SAPTO",
+          "description": "seniors and pensioners tax offset",
+          "type": "number",
+          "dimensionality": "scalar",
+          "optional": true
+        },
+        {
+          "name": "familyIncome",
+          "description": "family income",
+          "type": "number",
+          "dimensionality": "scalar",
+          "optional": true
+        },
+        {
+          "name": "dependents",
+          "description": "number of dependents",
+          "type": "number",
+          "dimensionality": "scalar",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "lito",
+      "name": "lito",
+      "description": "Returns the lito",
+      "helpUrl": "http://www.contoso.com/help",
+      "result": {
+        "type": "number",
+        "dimensionality": "scalar"
+      },
+      "parameters": [
+        {
+          "name": "year",
+          "description": "year",
+          "type": "number",
+          "dimensionality": "scalar"
+        },
+        {
+          "name": "taxableIncome",
+          "description": "taxable income",
+          "type": "number",
+          "dimensionality": "scalar"
+        }
+      ]
+    },
+    {
+      "id": "lamito",
+      "name": "lamito",
+      "description": "Returns the mito",
+      "helpUrl": "http://www.contoso.com/help",
+      "result": {
+        "type": "number",
+        "dimensionality": "scalar"
+      },
+      "parameters": [
+        {
+          "name": "year",
+          "description": "year",
+          "type": "number",
+          "dimensionality": "scalar"
+        },
+        {
+          "name": "taxableIncome",
+          "description": "taxable income",
+          "type": "number",
+          "dimensionality": "scalar"
+        }
+      ]
     }
   ]
 }
